@@ -25,7 +25,7 @@ MAfa\ImageAspect\ImageAspectModel {
 // x is integer to crop from left of image
 $coordinates->getX();
 
-// x is integer to crop from top of image
+// y is integer to crop from top of image
 $coordinates->getY();
 
 // width is integer to crop to right of image and width of final width in expected aspect ratio
@@ -43,4 +43,4 @@ $coordinates->getHeight();
 |  **getWidth()**   | Width of Image in expected Aspect ratio  | integer        |
 |  **getHeight()**  | Height of Image in expected Aspect ratio | integer        |
 |  **getX()**       | Start area from left of image to crop    | integer        |
-|  **getX()**       | Start area from bottom of image to crop  | integer        |
+|  **getY()**       | Start area from top of image to crop     | integer        |
