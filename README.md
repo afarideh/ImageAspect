@@ -1,5 +1,5 @@
 # ImageAspect
-ImageAspect - A simple Image Aspect crop coordination generator.
+ImageAspect - A simple Image Aspect Ratio crop coordination generator.
 
 # Install
 Composer 
@@ -28,10 +28,10 @@ $coordinates->getX();
 // x is integer to crop from top of image
 $coordinates->getY();
 
-// width is integer to crop to right of image and width of final width in expected aspect
+// width is integer to crop to right of image and width of final width in expected aspect ratio
 $coordinates->getWidth();
 
-// height is integer to crop to bottom of image and width of final height in expected aspect
+// height is integer to crop to bottom of image and width of final height in expected aspect ratio
 $coordinates->getHeight();
 
 ```
@@ -40,7 +40,7 @@ $coordinates->getHeight();
 
 | Method            | Value                                    | Type           |
 | :---------------- | :--------------------------------------- | :------------- |
-|  **getWidth()**   | Width of Image in expected Aspect        | integer        |
-|  **getHeight()**  | Height of Image in expected Aspect       | integer        |
+|  **getWidth()**   | Width of Image in expected Aspect ratio  | integer        |
+|  **getHeight()**  | Height of Image in expected Aspect ratio | integer        |
 |  **getX()**       | Start area from left of image to crop    | integer        |
 |  **getX()**       | Start area from bottom of image to crop  | integer        |
