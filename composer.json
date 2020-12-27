@@ -1,14 +1,17 @@
 {
     "name": "mafa/imageaspect",
     "description": "ImageAspect - A simple Image Aspect crop coordination generator.",
-    "type": "project",
+    "keywords": ["Image", "php", "ImageCrop"],
     "license": "MIT",
     "authors": [
         {
             "name": "Mahmoud Afarideh",
-            "email": "m.afarideh@dadehpardaz.com"
+            "email": "mahmoud.afarideh@gmail.com"
         }
     ],
+    "autoload": {
+        "MAfa\\ImageAspect\\": "src/"
+    },
     "minimum-stability": "dev",
     "require": {}
 }
