@@ -10,7 +10,9 @@
         }
     ],
     "autoload": {
-        "MAfa\\ImageAspect\\": "src/"
+        "psr-4": {
+            "MAfa\\ImageAspect\\": "src/"
+        }
     },
     "minimum-stability": "dev",
     "require": {}
