@@ -61,21 +61,9 @@ class ImageAspect
         $imageAspect = $this->imageWidth / $this->imageHeight;
 
         if($imageAspect > $aspect){
-            if($this->imageHeight < $this->imageWidth){
-                $imageAspectModel->setWidth((int) ($this->imageHeight * $aspect));
-            }else if($this->imageHeight > $this->imageWidth){
-                $imageAspectModel->setWidth((int) ($this->imageHeight / $aspect));
-            }else if($this->imageHeight == $this->imageWidth){
-                $imageAspectModel->setHeight((int) ($this->imageWidth * $aspect));
-            }
+            $imageAspectModel->setWidth((int) ($this->imageHeight * $aspect));
         }else if($imageAspect < $aspect){
-            if($this->imageHeight < $this->imageWidth){
-                $imageAspectModel->setHeight((int) ($this->imageWidth / $aspect));
-            }else if($this->imageHeight > $this->imageWidth){
-                $imageAspectModel->setHeight((int) ($this->imageWidth / $aspect));
-            }else if($this->imageHeight == $this->imageWidth){
-                $imageAspectModel->setWidth((int) ($this->imageHeight * $aspect));
-            }
+            $imageAspectModel->setHeight((int) ($this->imageWidth / $aspect));
         }
         $imageAspectModel->setX((int)(($this->imageWidth - $imageAspectModel->getWidth()) / 2));
         $imageAspectModel->setY((int)(($this->imageHeight - $imageAspectModel->getHeight()) / 2));
